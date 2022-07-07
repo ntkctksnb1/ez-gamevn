@@ -1,0 +1,145 @@
+body {
+    width: 100%;
+    padding-top: 0pt;
+    font-family: sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 100%; */
+}
+@media (min-width: 574px) {
+    body {
+        padding-top: 10pt;
+        width: 50%;
+        /* height: auto; */
+    }
+    .left {
+        width: 30%;
+        font-size: 20pt;
+        font-weight: bold;
+    }
+    
+    .right {
+        width: 30%;
+        font-size: 20pt;
+        font-weight: bold;
+    }
+}
+
+.split {
+    background-color: #6beee5;
+    height: 26pt;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10pt;
+    padding-right: 10pt;
+}
+
+
+.title {
+    font-size: 30pt;
+    font-weight: bold;
+    text-align: center;
+    background: #f5f5dc;
+    padding-top: 10pt;
+}
+
+.left {
+    width: 50%;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.right {
+    width: 50%;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+#question,
+#result {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 40pt;
+    font-weight: bold;
+    background: #c3d6ee;
+}
+
+#result {
+    background: #eec68f;
+}
+
+#correct {
+    width: 100pt;
+    height: 100pt;
+    font-size: 40pt;
+    color: green;
+    font-weight: bolder;
+    border: 2pt solid black;
+}
+
+#wrong {
+    width: 100pt;
+    height: 100pt;
+    font-size: 40pt;
+    color: green;
+    font-weight: bolder;
+    border: 2pt solid black;
+}
+
+.answer {
+    display: flex;
+    padding-top: 40pt;
+    padding-bottom: 40pt;
+    padding-left: auto;
+    padding-right: auto;
+    background-color: #ffe4c5;
+    justify-content: space-around;
+}
+
+#timer {
+    /* height: 10pt; */
+    width: 100%;
+}
+
+#remaining {
+    width: 100%;
+    height: 10pt;
+    background-color: red;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* justify-content: center; */
+    padding-top: 200pt;
+}
+
+.game-over,
+#renew {
+    margin-bottom: 20pt;
+    border: 1pt solid black;
+    padding-top: 10pt;
+    /* padding-bottom: 10pt; */
+    font-size: 10pt;
+    width: 100pt;
+    background-color: red;
+    border-radius: 10pt;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    height: 20pt;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#renew {
+    background-color: lawngreen;
+}
