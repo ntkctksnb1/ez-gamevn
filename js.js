@@ -26,7 +26,7 @@ function counter() {
     }
     else {
         var seconds = Math.floor((distance / 1000));
-        var percent = Math.floor((seconds / 10) * 100);
+        var percent = Math.floor((seconds / 20) * 100);
         distance -= 1000;
         $("#remaining").css("width", percent + "%");
     }
