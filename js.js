@@ -3,7 +3,7 @@ var level = 1;
 var score = 0;
 var tof = true;
 
-var distance = 10000;
+var distance = 20000;
 var x = setInterval(counter, 1000);
 
 function onOverlay() {
@@ -54,7 +54,7 @@ function showTrueOrFalse() {
 function prepareQuestion(level) {
     $("#remaining").css("width", "100%");
     clearInterval(x);
-    distance = 10000;
+    distance = 20000;
     x = setInterval(counter, 1000);
     var data = genQuestion(level);
     var result = eval(data);
@@ -91,6 +91,6 @@ function clickFalse() {
 $(document).ready(function () {
     score = 0;
     level = 1;
-    distance = 10000;
+    distance = 20000;
     prepareQuestion(level);
 });
